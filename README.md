@@ -1,43 +1,27 @@
 ## About
+This project follows simple clean/onion architectural model. 
 
-This project was created with [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript).
+Improvements:
+1. Add unit tests.
+2. Cache results to redis instead of current caching logic. 
 
+### Setup
 
-## Available Scripts
+Setup node 20 (use nvm)
 
-### `npm run dev`
+### `nvm use 20`
 
-Run the server in development mode.
-
-### `npm test`
-
-Run all unit-tests with hot-reloading.
-
-### `npm test -- --testFile="name of test file" (i.e. --testFile=Users).`
-
-Run a single unit-test.
-
-### `npm run test:no-reloading`
-
-Run all unit-tests without hot-reloading.
-
-### `npm run lint`
-
-Check for linting errors.
-
-### `npm run build`
-
-Build the project for production.
-
-### `npm start`
 
 Run the production build (Must be built first).
 
-### `npm start -- --env="name of env file" (default is production).`
-
-Run production build with a different env file.
+### `yarn build`
 
 
-## Additional Notes
+Run server
 
-- If `npm run dev` gives you issues with bcrypt on MacOS you may need to run: `npm rebuild bcrypt --build-from-source`. 
+### `yarn start`
+
+
+
+
+This project was created with [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript).
